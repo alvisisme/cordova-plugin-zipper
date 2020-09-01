@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-zipper",
+  "version": "0.1.0",
+  "description": "Zip压缩与解压插件",
+  "cordova": {
+    "id": "cordova-plugin-zipper",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvisisme/cordova-plugin-zipper.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "Alvis Zhao",
+  "license": "ISC"
+}
