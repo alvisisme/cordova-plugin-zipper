@@ -42,6 +42,8 @@
     <source-file src="src/android/libs/x86_64/libzipper_jni.so" target-dir="libs/x86_64/"/>
     <source-file src="src/android/libs/x86_64/libzip.so" target-dir="libs/x86_64/"/>
     <source-file src="src/android/libs/x86_64/libc++_shared.so" target-dir="libs/x86_64/"/>
+
+    <hook type="before_plugin_install" src="hooks/android/before_plugin_install.js" />
   </platform>
 
 </plugin>
