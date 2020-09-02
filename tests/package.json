@@ -1,0 +1,16 @@
+{
+    "name": "cordova-plugin-zipper-tests",
+    "version": "0.1.0",
+    "description": "",
+    "cordova": {
+      "id": "cordova-plugin-zipper-tests",
+      "platforms": [
+        "android"
+      ]
+    },
+    "keywords": [
+      "ecosystem:cordova"
+    ],
+    "author": "",
+    "license": "Apache 2.0"
+  }
