@@ -63,9 +63,17 @@
     cordova run
     ```
 
-## 接口
+## API接口
 
 见 [源码注释](./www/zipper.js)
+
+## 常见问题
+
+* 安装时出现`libc++_shared.so" already exists`问题
+
+    当多个插件同时存在`libc++_shared.so`时会存在冲突导致安装失败，可以在安装时加入`--force`选项强制安装。
+
+    ` cordova plugin add ../cordova-plugin-zipper --force`
 
 ## 参考引用
 
