@@ -6,7 +6,7 @@ import org.json.JSONException;
 
 import java.io.File;
 
-public class Zipper extends CordovaPlugin {
+public class ZipperPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) {
