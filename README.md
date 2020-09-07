@@ -65,7 +65,7 @@
 
 ## API接口
 
-见 [源码注释](./www/zipper.js)
+执行`npm run doc`，见 `out/index.html`
 
 ## 常见问题
 

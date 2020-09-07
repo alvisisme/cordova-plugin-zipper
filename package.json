@@ -2,6 +2,9 @@
   "name": "cordova-plugin-zipper",
   "version": "0.1.0",
   "description": "Zip压缩与解压插件",
+  "scripts": {
+    "doc": "jsdoc  --readme README.md www/zipper.js"
+  },
   "cordova": {
     "id": "cordova-plugin-zipper",
     "platforms": [
