@@ -10,13 +10,12 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/zipper.js" target="js/zipper.js"/>
-
   <js-module src="www/zipper.js" name="zipper">
     <clobbers target="cordova.plugins.zipper" />
   </js-module>
 
   <platform name="android">
+    <hook type="before_plugin_install" src="hooks/android/before_plugin_install.js" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Zipper">
@@ -32,16 +31,12 @@
     <source-file src="src/android/java/ZipperJni.java" target-dir="src/com/plugin/zipper"/>
     <source-file src="src/android/libs/arm64-v8a/libzipper_jni.so" target-dir="libs/arm64-v8a/"/>
     <source-file src="src/android/libs/arm64-v8a/libzip.so" target-dir="libs/arm64-v8a/"/>
-    <source-file src="src/android/libs/arm64-v8a/libc++_shared.so" target-dir="libs/arm64-v8a/"/>
     <source-file src="src/android/libs/armeabi-v7a/libzipper_jni.so" target-dir="libs/armeabi-v7a/"/>
     <source-file src="src/android/libs/armeabi-v7a/libzip.so" target-dir="libs/armeabi-v7a/"/>
-    <source-file src="src/android/libs/armeabi-v7a/libc++_shared.so" target-dir="libs/armeabi-v7a/"/>
     <source-file src="src/android/libs/x86/libzipper_jni.so" target-dir="libs/x86/"/>
     <source-file src="src/android/libs/x86/libzip.so" target-dir="libs/x86/"/>
-    <source-file src="src/android/libs/x86/libc++_shared.so" target-dir="libs/x86/"/>
     <source-file src="src/android/libs/x86_64/libzipper_jni.so" target-dir="libs/x86_64/"/>
     <source-file src="src/android/libs/x86_64/libzip.so" target-dir="libs/x86_64/"/>
-    <source-file src="src/android/libs/x86_64/libc++_shared.so" target-dir="libs/x86_64/"/>
   </platform>
 
 </plugin>
