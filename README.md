@@ -69,11 +69,13 @@
 
 ## 常见问题
 
-* 安装时出现`libc++_shared.so" already exists`问题
+* `libc++_shared.so`多次安装问题
 
-    当多个插件同时存在`libc++_shared.so`时会存在冲突导致安装失败，可以在安装时加入`--force`选项强制安装。
+    当多个插件同时存在`libc++_shared.so`时会存在冲突导致安装失败，一般可以在插件安装时加入`--force`选项强制安装。
 
-    ` cordova plugin add ../cordova-plugin-zipper --force`
+    而 cordova-plugin-zipper 插件安装前会通过钩子函数自动判断是否存在 libc++_shared.so，不存在则复制到对应目录，
+
+    卸载时则需要根据工程依赖自己决定是否删除 libc++_shared.so，无法自动删除。
 
 ## 参考引用
 
